@@ -264,6 +264,7 @@ body {
 .box-1 {
   transform: translateY(250px);
   animation: box 0.5s ease-in-out 2.5s forwards;
+  border-right: 1px solid var(--metal);
 }
 .box__num {
   font-weight: 900;
@@ -288,6 +289,7 @@ body {
 .box-2 {
   transform: translateY(250px);
   animation: box 0.5s ease-in-out 2.7s forwards;
+  border-right: 1px solid var(--metal);
 }
 .box-3 {
   transform: translateY(250px);
