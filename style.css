@@ -127,7 +127,7 @@ body {
   width: 400px;
   position: absolute;
   transform: translateX(670px);
-  animation: smallPorsche 3s ease-in-out;
+  animation: smallPorsche 3.1s ease-in-out;
 }
 /* ---SECTIONS--- */
 .section-1 {
@@ -166,7 +166,6 @@ body {
   animation: showContent 2s ease-in-out 0.7s forwards;
 }
 .info-content__title {
-  /* font-family: "Montserrat", sans-serif; */
   font-weight: 700;
   font-style: normal;
   font-size: 58px;
@@ -174,7 +173,7 @@ body {
 }
 .info-content__text {
   color: var(--metal);
-  /* font-family: "Poppins", sans-serif; */
+
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -182,7 +181,7 @@ body {
 }
 .info-content__button {
   background-color: var(--olive);
-  /* font-family: "Poppins", sans-serif; */
+
   font-optical-sizing: auto;
   font-weight: 500;
   font-size: 18px;
@@ -234,10 +233,10 @@ body {
 .title-123 {
   opacity: 0;
   color: #fff;
-  /* font-family: var(--montserrat); */
+
   font-weight: 400;
   font-size: 35px;
-  /* letter-spacing: 2px; */
+
   animation: title123 1s ease-in-out 1.9s forwards;
 }
 .box-123 {
@@ -256,7 +255,7 @@ body {
 .box {
   max-width: 420px;
   width: 100%;
-  /* border: 1px solid #ffffff; */
+
   display: flex;
   align-items: center;
   gap: 20px;
@@ -267,7 +266,6 @@ body {
   animation: box 0.5s ease-in-out 2.5s forwards;
 }
 .box__num {
-  /* font-family: "Quicksand", sans-serif; */
   font-weight: 900;
   font-size: 60px;
 }
@@ -278,13 +276,11 @@ body {
   gap: 20px;
 }
 .box__content-title {
-  /* font-family: var(--montserrat); */
   color: #fff;
   font-weight: 600;
   font-size: 28px;
 }
 .box__content-text {
-  /*  font-family: var(--poppins); */
   color: var(--metal);
   font-weight: 400;
   font-size: 17px;
@@ -322,7 +318,7 @@ body {
 }
 .modal__title {
   color: #fff;
-  font-family: var(--poppins);
+
   font-weight: 500;
 }
 .modal__form {
@@ -336,10 +332,8 @@ body {
   width: 80%;
   border-bottom: 2px solid var(--olive);
   color: #fff;
-  font-family: var(--poppins);
 }
 .form__input::placeholder {
-  font-family: var(--poppins);
 }
 .input__name {
 }
@@ -353,10 +347,8 @@ body {
   resize: none;
   border-bottom: 2px solid var(--olive);
   color: #fff;
-  font-family: var(--poppins);
 }
 .form__textarea::placeholder {
-  font-family: var(--poppins);
 }
 .form__button {
   background-color: var(--olive);
