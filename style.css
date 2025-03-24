@@ -78,7 +78,6 @@ body {
 }
 .logo__text {
   font-size: 32px;
-  /* font-family: "Quicksand", sans-serif; */
   font-weight: 900;
   font-style: normal;
   color: rgb(255, 255, 255);
@@ -94,7 +93,6 @@ body {
 }
 .nav__link {
   color: #ffffff;
-  /* font-family: "Poppins", sans-serif; */
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -246,7 +244,7 @@ body {
 }
 @keyframes box {
   0% {
-    transform: translateY(250px);
+    transform: translateY(260px);
   }
   100% {
     transform: translateY(0);
@@ -262,7 +260,7 @@ body {
   padding: 10px;
 }
 .box-1 {
-  transform: translateY(250px);
+  transform: translateY(260px);
   animation: box 0.5s ease-in-out 2.5s forwards;
   border-right: 1px solid var(--metal);
 }
@@ -287,19 +285,19 @@ body {
   font-size: 17px;
 }
 .box-2 {
-  transform: translateY(250px);
+  transform: translateY(260px);
   animation: box 0.5s ease-in-out 2.7s forwards;
   border-right: 1px solid var(--metal);
 }
 .box-3 {
-  transform: translateY(250px);
+  transform: translateY(260px);
   animation: box 0.5s ease-in-out 2.9s forwards;
 }
 /* ---MODAL--- */
 .modal {
   display: none;
   width: 30%;
-  height: 50%;
+  height: 40%;
   position: fixed;
   background-color: #0d0d0d;
   top: 50%;
@@ -315,7 +313,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
 }
 .modal__title {
@@ -328,10 +326,10 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 .form__input {
-  width: 80%;
+  width: 85%;
   border-bottom: 2px solid var(--olive);
   color: #fff;
 }
@@ -344,8 +342,8 @@ body {
 .input__mail {
 }
 .form__textarea {
-  width: 80%;
-  height: 10px;
+  width: 85%;
+  height: 22px;
   resize: none;
   border-bottom: 2px solid var(--olive);
   color: #fff;
@@ -354,13 +352,13 @@ body {
 }
 .form__button {
   background-color: var(--olive);
-  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-size: 18px;
   padding: 20px 40px;
   border-radius: 100px;
   cursor: pointer;
+  margin-top: 30px;
 }
 /* .close__position {
   position: absolute;
