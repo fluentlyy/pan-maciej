@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__body">
+        <a href="" class="header__logo">
+          <img src="" alt="" class="logo__img" />
+          <span class="logo__text"
+            >Pan<span class="olive__text">Maciej</span>
+          </span>
+        </a>
+        <nav class="header__nav">
+          <ul class="header___menu">
+            <li class="header__menu-item">
+              <a href="" class="nav__link">Główna</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="nav__link">Usługi</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="nav__link">Katalog aut</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="nav__link">Kontakty</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-1">
+        <div class="head__info">
+          <div class="head__info-content">
+            <h1 class="info-content__title">
+              <span class="olive__text">Tylko</span> my możemy spełnić Twoje
+              najskrytsze pragnienia.
+            </h1>
+            <!--  <p class="info-content__text">
+              Zostań naszym klientem i złóż wniosek już dziś
+            </p> -->
+            <a href="" class="info-content__button">Zostaw prośbę</a>
+          </div>
+          <img
+            class="porsche__small"
+            src="./media/imgs/porsche-model.png"
+            alt=""
+          />
+          <div class="head__info-video">
+            <video class="porsche__video" muted playsinline autoplay loop>
+              <source src="./media/video/video-porsche.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-123">
+          <h2 class="title-123">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </h2>
+          <div class="box-123">
+            <div class="box box-1">
+              <span class="box__num olive__text">1</span>
+              <div class="box__content">
+                <h4 class="box__content-title">Lorem ipsum dolor</h4>
+                <p class="box__content-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi nostrum nulla facere? Optio fuga repellendus
+                  maiores.
+                </p>
+              </div>
+            </div>
+            <div class="box box-2">
+              <span class="box__num olive__text">2</span>
+              <div class="box__content">
+                <h4 class="box__content-title">Lorem ipsum dolor</h4>
+                <p class="box__content-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi nostrum nulla facere? Optio fuga repellendus
+                  maiores.
+                </p>
+              </div>
+            </div>
+            <div class="box box-3">
+              <span class="box__num olive__text">3</span>
+              <div class="box__content">
+                <h4 class="box__content-title">Lorem ipsum dolor</h4>
+                <p class="box__content-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi nostrum nulla facere? Optio fuga repellendus
+                  maiores.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal">
+      <div class="modal__content">
+        <!-- <div class="close__position">
+          <div class="close"></div>
+        </div> -->
+        <h2 class="modal__title">Skontaktuj sie z Toba?</h2>
+        <form class="modal__form" action="" method="POST">
+          <!-- <label class="form__label" for="name">Imię</label> -->
+          <input
+            placeholder="Imię"
+            id="name"
+            type="text"
+            class="form__input input__name"
+          />
+          <!-- <label for="phone" class="form__label"></label> -->
+          <input
+            placeholder="Numer telefonu"
+            id="phone"
+            type="text"
+            class="form__input input__phone"
+          />
+          <!-- <label for="mail" class="form__label"></label> -->
+
+          <!-- <label for="comment" class="form__label"></label> -->
+          <textarea
+            placeholder="Twój komentarz"
+            class="form__textarea"
+            name=""
+            id="comment"
+            rows="1"
+          ></textarea>
+          <button type="submit" class="form__button">Wysłać wniosek</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/paralax.js"></script>
+  </body>
+</html>
