@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fullpage/fullpage.css" />
   </head>
   <body>
     <header class="header">
@@ -33,72 +35,81 @@
         </nav>
       </div>
     </header>
-    <main class="main">
-      <section class="section-1">
-        <div class="head__info">
-          <div class="head__info-content">
-            <h1 class="info-content__title">
-              <span class="olive__text">Tylko</span> my możemy spełnić Twoje
-              najskrytsze pragnienia.
-            </h1>
-            <!--  <p class="info-content__text">
-              Zostań naszym klientem i złóż wniosek już dziś
-            </p> -->
-            <a href="" class="info-content__button">Zostaw prośbę</a>
-          </div>
-          <img
-            class="porsche__small"
-            src="./media/imgs/porsche-model.png"
-            alt=""
-          />
-          <div class="head__info-video">
-            <video class="porsche__video" muted playsinline autoplay loop>
-              <source src="./media/video/video-porsche.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section-123">
-          <h2 class="title-123">Jak wygląda proces sprowadzenia samochodu?</h2>
-          <div class="box-123">
-            <div class="box box-1">
-              <span class="box__num olive__text">1</span>
-              <div class="box__content">
-                <h4 class="box__content-title">Krok pierwszy</h4>
-                <p class="box__content-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nostrum nulla facere? Optio fuga repellendus
-                  maiores.
-                </p>
-              </div>
+    <div id="fullpage">
+      <section id="first-section" class="section">
+        <div id="first-subsection" class="subsection">
+          <div class="head__info">
+            <div class="head__info-content">
+              <h1 class="info-content__title">
+                <span class="olive__text">Tylko</span> my możemy spełnić Twoje
+                najskrytsze pragnienia.
+              </h1>
+              <!--  <p class="info-content__text">
+                  Zostań naszym klientem i złóż wniosek już dziś
+                </p> -->
+              <a href="" class="info-content__button">Zostaw prośbę</a>
             </div>
-            <div class="box box-2">
-              <span class="box__num olive__text">2</span>
-              <div class="box__content">
-                <h4 class="box__content-title">Krok drugi</h4>
-                <p class="box__content-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nostrum nulla facere? Optio fuga repellendus
-                  maiores.
-                </p>
-              </div>
-            </div>
-            <div class="box box-3">
-              <span class="box__num olive__text">3</span>
-              <div class="box__content">
-                <h4 class="box__content-title">Krok trzeci</h4>
-                <p class="box__content-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nostrum nulla facere? Optio fuga repellendus
-                  maiores.
-                </p>
-              </div>
+            <img
+              class="porsche__small"
+              src="./media/imgs/porsche-model.png"
+              alt=""
+            />
+            <div class="head__info-video">
+              <video class="porsche__video" muted playsinline autoplay loop>
+                <source
+                  src="./media/video/video-porsche.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </div>
         </div>
+        <div class="subsection">
+          <div class="subsection-123">
+            <h2 class="title-123">
+              Jak wygląda proces sprowadzenia samochodu?
+            </h2>
+            <div class="box-123">
+              <div class="box box-1">
+                <span class="box__num olive__text">1</span>
+                <div class="box__content">
+                  <h4 class="box__content-title">Krok pierwszy</h4>
+                  <p class="box__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi nostrum nulla facere? Optio fuga repellendus
+                    maiores.
+                  </p>
+                </div>
+              </div>
+              <div class="box box-2">
+                <span class="box__num olive__text">2</span>
+                <div class="box__content">
+                  <h4 class="box__content-title">Krok drugi</h4>
+                  <p class="box__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi nostrum nulla facere? Optio fuga repellendus
+                    maiores.
+                  </p>
+                </div>
+              </div>
+              <div class="box box-3">
+                <span class="box__num olive__text">3</span>
+                <div class="box__content">
+                  <h4 class="box__content-title">Krok trzeci</h4>
+                  <p class="box__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi nostrum nulla facere? Optio fuga repellendus
+                    maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-    </main>
+      <section class="section"></section>
+      <section class="section"></section>
+    </div>
 
     <div class="modal">
       <div class="modal__content">
@@ -136,8 +147,15 @@
       </div>
     </div>
 
-    <script src="./js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./fullpage/fullpage.min.js"></script>
+    <script src="./js/fullpage.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/paralax.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
