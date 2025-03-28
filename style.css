@@ -303,15 +303,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 50px;
 }
 
 .import__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
 }
 .card {
-  width: 460px;
+  width: 470px;
   display: flex;
   flex-direction: column;
   align-items: center;

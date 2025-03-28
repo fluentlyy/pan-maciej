@@ -2,6 +2,7 @@ let button = document.querySelector(".info-content__button");
 let closeButton = document.querySelector(".close");
 let modal = document.querySelector(".modal");
 const overlay = document.createElement("div");
+let formInputs = document.querySelectorAll(".form__input");
 
 button.addEventListener("click", function (e) {
   e.preventDefault();
@@ -21,9 +22,15 @@ button.addEventListener("click", function (e) {
   overlay.style.pointerEvents = "all"; // Забезпечує, щоб користувач міг взаємодіяти з елементами
   document.body.appendChild(overlay);
 
+  /* formInputs.forEach(formInput => {
+    if (formInput.value.trim()=""){
+      
+    }
+  }); */
+
   overlay.addEventListener("click", function () {
     modal.style.display = "none";
-    document.body.removeChild(overlay); // Видаляємо overlay
+    document.body.removeChild(overlay);
   });
 });
 closeButton.addEventListener("click", function () {
