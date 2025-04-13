@@ -1,4 +1,4 @@
-let button = document.querySelector(".info-content__button");
+let button = document.querySelector("._button");
 let closeButton = document.querySelector(".close");
 let modal = document.querySelector(".modal");
 const overlay = document.createElement("div");

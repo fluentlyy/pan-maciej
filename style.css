@@ -72,7 +72,7 @@ body {
   justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 30px 24px;
+  padding: clamp(21.33px, 2.08vw, 30px) clamp(17.07px, 1.67vw, 24px);
   box-sizing: content-box;
 }
 .header__logo {
@@ -82,7 +82,7 @@ body {
 .logo__img {
 }
 .logo__text {
-  font-size: 32px;
+  font-size: clamp(22.76px, 2.22vw, 32px);
   font-weight: 900;
   font-style: normal;
   color: rgb(255, 255, 255);
@@ -92,7 +92,7 @@ body {
 .header___menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(14.22px, 1.39vw, 20px);
 }
 .header__menu-item {
 }
@@ -100,7 +100,7 @@ body {
   color: #ffffff;
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
+  font-size: clamp(11.38px, 1.11vw, 16px);
   position: relative;
 }
 .nav__link::after {
@@ -127,29 +127,29 @@ body {
 }
 
 .porsche__small {
-  width: 400px;
+  width: clamp(284.44px, 27.78vw, 400px);
   position: absolute;
   transform: translateX(720px);
   animation: smallPorsche 3.1s ease-in-out;
 }
 /* ---SECTIONS--- */
 .section {
-  padding: 92px 0;
+  padding: clamp(65.42px, 6.39vw, 92px) 0;
 }
 #first-subsection {
-  margin: 60px auto 0 auto;
+  margin: clamp(42.67px, 4.17vw, 60px) auto 0 auto;
 }
 .subsection {
   max-width: 1440px;
-  margin: 105px auto 0 auto;
-  padding: 0 24px;
+  margin: clamp(74.67px, 7.29vw, 105px) auto 0 auto;
+  padding: 0 clamp(17.07px, 1.67vw, 24px);
   box-sizing: content-box;
 }
 /* ---MAIN--- */
 .head__info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(14.22px, 1.39vw, 20px);
 }
 @keyframes showContent {
   0% {
@@ -163,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
+  gap: clamp(21.33px, 2.08vw, 30px);
   width: 50%;
   transform: translateX(-950px);
   animation: showContent 2s ease-in-out 0.7s forwards;
@@ -171,25 +171,17 @@ body {
 .info-content__title {
   font-weight: 700;
   font-style: normal;
-  font-size: 58px;
+  font-size: clamp(41.24px, 4.03vw, 58px);
   color: #ffffff;
 }
-.info-content__text {
-  color: var(--metal);
-
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 20px;
-}
-.info-content__button {
+._button {
   background-color: var(--olive);
-
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 18px;
-  padding: 22.5px 45.5px;
-  border-radius: 100px;
+  font-size: clamp(12.8px, 1.25vw, 18px);
+  padding: clamp(15.64px, 1.53vw, 22px) clamp(32px, 3.13vw, 45px);
+  border-radius: clamp(71.11px, 6.94vw, 100px);
+  cursor: pointer;
 }
 @keyframes showVideo {
   0% {
@@ -204,10 +196,9 @@ body {
   width: 50%;
   aspect-ratio: 16 / 9; /* Автоматично задає висоту */
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: clamp(14.22px, 1.39vw, 20px);
   opacity: 0;
   animation: showVideo 0.2s ease-in-out 1.85s forwards;
-  perspective: 1700px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 .porsche__video {
@@ -223,7 +214,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: clamp(35.56px, 3.47vw, 50px);
 }
 @keyframes title123 {
   0% {
@@ -236,10 +227,8 @@ body {
 ._title {
   opacity: 0;
   color: #fff;
-
   font-weight: 400;
-  font-size: 35px;
-
+  font-size: clamp(24.89px, 2.43vw, 35px);
   animation: title123 1s ease-in-out 1.85s forwards;
 }
 .box-123 {
@@ -256,13 +245,12 @@ body {
   }
 }
 .box {
-  max-width: 480px;
+  max-width: clamp(341.33px, 33.33vw, 480px);
   width: 100%;
-
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 10px;
+  gap: clamp(14.22px, 1.39vw, 20px);
+  padding: clamp(7.11px, 0.69vw, 10px);
 }
 .box-1 {
   transform: translateY(260px);
@@ -271,23 +259,23 @@ body {
 }
 .box__num {
   font-weight: 900;
-  font-size: 60px;
+  font-size: clamp(42.67px, 4.17vw, 60px);
 }
 .box__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: clamp(14.22px, 1.39vw, 20px);
 }
 .box__content-title {
   color: #fff;
   font-weight: 600;
-  font-size: 28px;
+  font-size: clamp(19.91px, 1.94vw, 28px);
 }
 .box__content-text {
   color: var(--metal);
   font-weight: 400;
-  font-size: 17px;
+  font-size: clamp(12.09px, 1.18vw, 17px);
 }
 .box-2 {
   transform: translateY(260px);
@@ -309,11 +297,12 @@ body {
 .import__cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  align-items: center;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
 }
 .card {
-  width: 470px;
+  width: 460px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,10 +314,12 @@ body {
 }
 .card__title {
   color: #fff;
-  font-size: 20px;
+
+  font-size: 22px;
 }
 .card__text {
   color: var(--metal);
+  font-size: 18px;
 }
 
 /* ---MODAL--- */
